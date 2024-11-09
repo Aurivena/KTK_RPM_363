@@ -22,7 +22,6 @@ namespace WpfApp1
         }
 
         private int currentNum = 0;
-        private int defaultNum = 0;
 
         private void removeNumber(object sender, MouseButtonEventArgs e)
         {
@@ -40,8 +39,7 @@ namespace WpfApp1
         private void clearListView(object sender, MouseButtonEventArgs e)
         {
             listNumbers.Items.Clear();
-            listNumbers.Items.Add(defaultNum);
-            currentNum = 1;
+            currentNum = 0;
         }
     }
 }
